@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            </head>
+
+            <body>
+
+                <label>Practica 07: Comandos. </label>
+
+                <div>
+                    <button type="submit" onclick='nuevaDireccion("hello")'>Hola mundo!</button>
+                    <label>hello</label>
+                </div>
+
+                <div>
+                    <button type="submit" onclick='nuevaDireccion("0x10")'>Timestamp</button>
+                    <label>0x10</label>
+                </div>
+
+                <div>
+                    <button type="submit" onclick='nuevaDireccion("0x11")'>Estado de LED</button>
+                    <label>0x11</label>
+                </div>
+
+                <div>
+                    <button type="submit" onclick='nuevaDireccion("0x12")'>Temperatura</button>
+                    <label>0x12</label>
+                </div>
+
+                <div>
+                    <button type="submit" onclick='nuevaDireccion("0x13")'>Invertir LED</button>
+                    <label>0x13</label>
+                </div>
+
+                    <script>
+                            function nuevaDireccion(string)
+                            {
+                                    window.open('./'+string)
+
+                            }
+                    </script>
+            </body>
+        </html>
+
